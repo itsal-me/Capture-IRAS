@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Capture IRAS",
+    "description": "We only capture your encrypted IRAS password for logging into xIRAS. Your data is not stored, ensuring it remains safe to use.",
+    "version": "1.0",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "assets/xIRAS.png"
+        }
+    }
+}

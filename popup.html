@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Captured Token Data</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+    }
+    #payload {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 200px;
+      overflow-y: scroll;
+      background-color: #f9f9f9;
+    }
+    #encryptedPass {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e0e0e0;
+      word-wrap: break-word;
+    }
+    button {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+    }
+    #copyButton {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <h3>Captured your IRAS</h3>
+  <div id="payload">No data captured yet.</div>
+  <div id="encryptedPass">No encrypted password available.</div>
+  <button id="clearBtn">Clear Data</button>
+  <button id="copyButton" style="display:none;">Copy to Clipboard</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
